@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body
+        {
+            counter-reset: My-counter 5;
+        }
+        h1::before
+        {
+            content: "section" counter(My-counter) "😃:";
+            counter-increment: My-counter 2 ;
+            color: greenyellow;
+        }
+        h1
+        {
+            counter-reset: subsection;
+        }
+        p::before
+        {
+            content: counter(My-counter) "." counter(subsection) ":";
+            counter-increment: subsection;
+        }
+    </style>
+</head>
+<body>
+   <h1>First Paragraph</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur consectetur rem velit quas provident cumque doloribus facilis magnam recusandae, quis quaerat minima dolores soluta officia earum quae dolore? Soluta!</p>
+   <h1>Second Paragraph</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae consequuntur aliquam ipsum corporis necessitatibus itaque cum voluptate. Laborum repellendus commodi nemo perspiciatis? Culpa iusto explicabo fugit maxime et? Nostrum.</p>
+   <h1>Third Paragraph</h1> 
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores a temporibus quisquam laudantium incidunt nisi, molestias omnis, dicta illo exercitationem voluptatem unde consectetur praesentium nesciunt veritatis earum minus nihil alias?</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <style>
+        body
+        {
+            font-size: 40px;
+            text-align: center;
+        }
+        div
+        {
+            width: 45%;
+            float: left;
+            height: 200px;
+            margin: 30px;
+            border: 3px solid #ccc;
+        }
+        .one
+        {
+            border: 3px solid red;
+            cursor: no-drop;
+        }
+        .two
+        {
+            border: 3px solid green;
+            cursor: wait;
+        }
+        .three
+        {
+            border: 3px solid blueviolet;
+            cursor: url(image/pexels-pixabay-260689.jpg), pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cursor</h1>
+    <div class="one">don't click</div>
+    <div class="two">wait</div>
+    <div class="three">nature photo</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+    <style type="text/css">
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: black;
+        }
+        .x
+        {
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            margin-top: 150px;
+            border: 12px solid;
+            border-top: 12px solid cyan;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            padding: 15px;
+            animation: preloader 1s linear infinite;
+            border-radius: 50%;
+        }
+        .y
+        {
+            height: 250px;
+            width: 250x;
+            border: 12px solid;
+            border-top: 12px solid green;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            padding: 15px;
+            border-radius: 50%;
+            animation: preloader 2s linear infinite;
+        }
+        .z
+        {   
+            height: 200px;
+            width: 200x;
+            border: 12px solid;
+            border-top: 12px solid yellowgreen;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            padding: 15px;
+            border-radius: 50%;
+            animation: preloader 3s linear infinite;
+        }
+        .p
+        {   
+            height: 150px;
+            width: 150x;
+            border: 12px solid;
+            border-top: 12px solid coral;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            padding: 15px;
+            border-radius: 50%;
+            animation: preloader 4s linear infinite;
+        }
+        @keyframes preloader
+        {
+            from
+            {
+                transform: rotate(0deg);
+            }
+            to
+            {
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y">
+            <div class="z">
+                <div class="p">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
